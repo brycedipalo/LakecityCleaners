@@ -1,9 +1,9 @@
-
+@import "tailwindcss";
 
 :root {
     --baseColor: #F2F8FF;
     --mainColor: #59ACFF;
-    --accentColor: #198CFF;
+    --accentColor: #4f92ad;
 }
 
 /* Default Styles (Desktop) */
@@ -14,104 +14,14 @@ body {
     box-sizing: border-box;
     color: #333;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #fff 200px ,#59acff);
-    position: relative;
-    color: #000;
-    z-index: 1000;
-       
-}
-header img {
-    height: 50px;
-}
-header .contact-info {
-    text-align: right;
-}
-header .contact-info a,
-header .header-content a
-{
-    color: #000;
-    text-decoration: none;
-}
-header .contact-info a:hover {
-    text-decoration: underline;
-}
-.hero-image{
-    background-image: url("/images/penticton-landscape.jpg");
-}
-.hero h1 {
-    margin: 0;
-    
-        font: 800 2.1em Arial;
-        -webkit-text-fill-color: whitesmoke;
-        -webkit-text-stroke: 1px;
-      }
 
-.hero h2 {
-    margin: 0;
-    
-        font: 800 1.8em Arial;
-        -webkit-text-fill-color: whitesmoke;
-        -webkit-text-stroke: 1px;
-      }      
 
-.hero-quote {   
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: var(--accentColor) ;             /*#007bff;*/
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.4em;
-    border-radius: 5px;
-}
-.hero a:hover {
-    background-color: #007bff;           /* #0056b3;*/
-}
-.hero-services{
-    background-color: var(--accentColor) ;
-    color: var(--accentColor);
-}
+
+
 .collapsible {
     color: var(--accentColor);
     text-decoration: underline;
-    /* background-color: #777;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    */
-}
-.active, .collapsible:hover {
-    /*
-    background-color: #555;
-    */
-}
-.content {
-    /*
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    */    
-}
-.services h3 {
-    font-size: 2em;
-}
-.services p {
-    font-size: 1em
-}
-.services h2 {
-    margin-bottom: 75px;
-    font-size: 2em;
-    text-align: center;
+
 }
 
 
@@ -119,72 +29,6 @@ header .contact-info a:hover {
 
 
 
-.testimonials {
-    padding: 20px;
-    background-color: var(--baseColor);
-    text-align: center;
-}
-.testimonials h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-.testimonial {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
-}
-.testimonial img {
-    all: revert;
-    width: 75px;
-    height: auto;
-
-    margin-bottom: 10px;
-}
-.testimonial p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #333;
-}
-.testimonial span {
-    display: block;
-    margin-top: 5px;
-    color: #666;
-}
-.carousel-controls {
-    margin-top: 10px;
-}
-.carousel-controls button {
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin: 0 5px;
-}
-#fixed-quote-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 16px;
-    z-index: 1000;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    display: none; /* Initially hidden */
-}
-#fixed-quote-button a {
-    text-decoration: none;
-    color: #ffffff;
-}
-#fixed-quote-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 #contact h2{
     all: revert;
 }
@@ -219,6 +63,11 @@ header .contact-info a:hover {
 .contact-info i {
     margin-right: 10px;
 }
+
+
+
+
+
 form {
     background-color: #f4f4f4;
     padding: 20px;
@@ -254,8 +103,13 @@ button[type="submit"] {
     font-size: 16px;
 }
 button[type="submit"]:hover {
-    background-color: #007bff; 
+    background-color: #3cb7b5; 
 }
+
+
+
+
+
 
 footer img {
     all: revert;
@@ -291,12 +145,7 @@ footer a:hover {
 
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
-    header {
-
-        padding: 10px 20px;
-        background-color: var(--mainColor) ; /* Blue color */
-        color: #000000;
-    }
+  
     #logo {
         display: block; /* Ensure logo is a block element */
         /*margin: 0 auto; /* Center the logo */
@@ -321,7 +170,6 @@ footer a:hover {
     .contact-info a {
         display: block;
         margin: 5px 0;
-        text-decoration: none;
     }
 
     .contact-info a:hover {
@@ -337,7 +185,7 @@ footer a:hover {
     .contact-container {
        /* max-width: 100%; /* Ensure full width usage */
         margin: 0 auto; /* Center the container */
-        text-align: left; /* Align text to the left */
+        
     }
 
     .contact-info p,
@@ -350,9 +198,7 @@ footer a:hover {
 
 @media only screen and (max-width: 480px) {
     
-    header img {
-        height: 40px;
-    }
+  
     footer img {
         height: 40px;
     }
@@ -360,9 +206,7 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
-    .hero p {
-        font-size: 1em;
-    }
+ 
     .services h3 {
         font-size: 1em;
     }
