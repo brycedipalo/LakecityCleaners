@@ -6,219 +6,93 @@
     --accentColor: #4f92ad;
 }
 
-/* Default Styles (Desktop) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-}
+
+
+
+   /*
+    <!-- Footer with bg-Gradient Logo and Contact links-->
+    <footer class="footer">
+        <!-- Footer Image container-->
+        <div>
+            <a href="#contact"><img  src="./images/lakecitycleaners.png"  alt="Lakecity Cleaners Penticton Logo"></a> 
+        </div>
+        <!-- Footer Contact links container-->
+        <div class="flex flex-col md:justify-around">
+            <a class="flex gap-2" href="tel:+2504622280">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-comment-sms "></i>
+                250-462-2280
+            </a> 
+            <a href="mailto:info@lakecitycleaners.ca"><i class="fa-solid fa-envelope"></i> info@lakecitycleaners.ca</a>
+        </div>
+    </footer>
+
+*/
+
+
+    /*<section id="contact">
+            <!-- Contact Us Container for Heading, contact info, and form-->
+            <div class="contact-container">
+                <!-- Heading Container-->
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-row items-center"> 
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>                
+                <!-- Contact info with links container-->
+                <div class="flex flex-col">
+                    <div class="flex flex-row justify-center gap-3 py-2">
+                        <div class="flex flex-row">
+                            <!-- Branding with logo-->
+                            <img src="./images/Lakecity-Cleaners-Penticton-Icon.png" class="size-6 -translate-x-1/3 " alt="">
+                            <p class="-translate-x-[7px]">Lakecity Cleaners </p>
+                        </div>
+                        <!-- Location -->
+                        <div class="flex flex-row">
+                            <i class="fa-solid fa-location-dot pr-1 "></i> <p>Penticton, BC</p>
+                        </div>
+                    </div>
+                    <!-- Phone and sms number and email -->
+                    <div class="flex flex-row justify-center gap-3 py-2">
+                        <a class="flex gap-2" href="tel:+2504622280">
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-solid fa-comment-sms "></i>
+                            250-462-2280
+                        </a>                 
+                        <a href="mailto:info@lakecitycleaners.ca"><i class="fa-solid fa-envelope"></i> info@lakecitycleaners.ca</a>
+                    </div>
+                </div>
+                <!-- Contact Form linked to formsubmit account-->
+                <form id="form" action="https://formsubmit.co/8451044cd0f1200bdd1513845448b82d" method="POST">
+                    <!--CC's form to additional emails listed:-->
+                    <input type="hidden" name="_cc" value="dipalo.creativo@gmail.com">
+                    <input type="hidden" name="_cc" value="info@lakecitycleaners.ca">
+                    <!-- Name Input feild -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <!-- Email input feild-->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Message input feild-->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <!-- Submit or Send Message Button-->
+                    <button type="submit">Send Message</button>
+                <!-- End of Contact Form linked to formsubmit account-->
+                </form>
+            <!-- end of Contact Container with heading links and form-->
+            </div>
+        <!-- end of Contact Section-->
+        </section>
+
+        */
 
 
 
 
-.collapsible {
-    color: var(--accentColor);
-    text-decoration: underline;
-
-}
-
-
-
-
-
-
-#contact h2{
-    all: revert;
-}
-
-#contact {
-    padding: 50px 20px;
-    background-color: #ffffff;
-}
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-info a {
-    display: flex;
-    margin: 5px 0;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-
-.contact-info .link {
-    display: block;
-    color: #007bff;
-    margin: 10px 0;
-    font-size: 18px;
-    text-decoration: none;
-}
-.contact-info i {
-    margin-right: 10px;
-}
-
-
-
-
-
-form {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-.form-group {
-    margin-bottom: 20px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-button[type="submit"] {
-    background-color: var(--accentColor);
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button[type="submit"]:hover {
-    background-color: #3cb7b5; 
-}
-
-
-
-
-
-
-footer img {
-    all: revert;
-    height: 50px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px;
-    padding-top: 0px;
-    min-height: 150px;
-    background: linear-gradient(to bottom, #fff 55px, #59acff);
-    color: #000;
-    text-align: center;
-}
-
-.footer-contact{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
-footer a {
-    text-decoration: none;
-    
-}
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Mobile View Adjustments */
-@media (max-width: 768px) {
-  
-    #logo {
-        display: block; /* Ensure logo is a block element */
-        /*margin: 0 auto; /* Center the logo */
-        height: 50px; /* Adjust height as needed */
-    }
-
-    .header-content {
-        margin: 10px 0; /* Space between logo and business name */
-        color: #000;
-        text-align: center;
-
-    }
-    .hero-image{
-        background-image: url("./images/penticton-landscape.jpg");
-    }
-    .services h3 {
-        font-size: 1.2em;
-    }
-    .services p{
-        font-size: .9em;
-    }
-    .contact-info a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .contact-info a:hover {
-        text-decoration: underline;
-    }
-
-    /* Contact Us Section */
-    #contact {
-        padding: 50px 20px; /* Maintain padding for the section */
-        background-color: #ffffff; /* Ensure background is white */
-    }
-
-    .contact-container {
-       /* max-width: 100%; /* Ensure full width usage */
-        margin: 0 auto; /* Center the container */
-        
-    }
-
-    .contact-info p,
-    .contact-info a {
-        margin: 10px 0; /* Adjust margin for spacing */
-    }
-}
-
-
-
-@media only screen and (max-width: 480px) {
-    
-  
-    footer img {
-        height: 40px;
-    }
-    .footer-contact{
-        display: flex;
-        flex-direction: column;
-    }
- 
-    .services h3 {
-        font-size: 1em;
-    }
-    .services p {
-        font-size: .8em;
-    }
-
-    .testimonial p {
-        font-size: 1em;
-    }
-    .carousel-controls button {
-        padding: 8px;
-        font-size: 1em;
-    }
-}
