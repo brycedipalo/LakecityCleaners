@@ -143,97 +143,95 @@
         </section> <!-- </Home -->
 
         <!-- Fullscreen About Us Modal container bg Overlay  -->
-<div id="aboutOverlay" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-    <!-- About Us Card -->
-    <div class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 rounded-lg relative shadow-lg">
-        <!-- Close Button -->
-        <button id="closeAbout" class="pb-1 absolute top-3 right-3 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl hover:bg-black transition">
-            &times;
-        </button>
-
-        <!-- Heading Container with logo -->
-        <div class="flex items-center justify-center mb-4">
-            <img class="w-12 h-12" src="./images/Lakecity-Cleaners-Penticton-Icon.png" alt="Logo">
-            <h2 class="pl-3 text-2xl md:text-3xl font-bold">About Us</h2>
+        <div id="aboutOverlay" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+            <!-- About Us Card -->
+            <div class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 rounded-lg relative shadow-lg">
+                <!-- Close Button -->
+                <button id="closeAbout" class="pb-1 absolute top-3 right-3 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center text-2xl hover:bg-black transition">
+                    &times;
+                </button>
+                <!-- Heading Container with logo -->
+                <div class="flex items-center justify-center mb-4">
+                    <img class="w-12 h-12" src="./images/Lakecity-Cleaners-Penticton-Icon.png" alt="Logo">
+                    <h2 class="pl-3 text-2xl md:text-3xl font-bold">About Us</h2>
+                </div>
+                <!-- Content Sections -->
+                <div class="space-y-6 text-gray-700 text-sm md:text-base">
+                    <!-- Section 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full">
+                            <img class="mr-6 float-left w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/clean-kitchen-penticton.jpg" alt="Clean Kitchen">
+                            <p class="md:pl-6  md:mt-0 leading-relaxed">
+                                With over 20 years of professional cleaning experience, we know what it takes to get a space truly clean. 
+                                Our background in restaurant operations and food safety taught us the highest standards, and we’ve carried that same level of care into everything we do.                    </p>
+                        </div>
+                    </div>
+                    <!-- Section 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center">
+                        <div class="w-full">
+                            <img class="float-right ml-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/penticton-cleaning-janitorial.jpg" alt="Cleaning Janitorial">
+                            <p class="md:pr-6  md:mt-0 leading-relaxed">
+                                After years of managing busy restaurant schedules, we made the decision to step away in favor of more time with our family.
+                                Moving back to our hometown of Penticton, BC, gave us more time with grandparents and made us realize how many seniors could use a helping hand. It’s a need we’re proud to meet.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Section 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full">
+                            <img class="float-left mr-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/cleaning-company-penticton.jpg" alt="Senior Cleaning">
+                            <p class="md:pl-6  md:mt-0 leading-relaxed">
+                                As our business grew, so did the demand for our services. We quickly became the go-to team for large-scale cleaning jobs like residential move-outs and janitorial services for apartment buildings, condos, and strata properties. 
+                                At the same time, we continue to offer routine housekeeping for seniors who need extra support, whether it’s weekly, bi-weekly, or monthly.                </p>
+                        </div>
+                    </div>
+                    <!-- Section 4 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center">
+                        <div class="w-full">
+                            <img class="float-right ml-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/move-out-cleaning-company-penticton.jpg" alt="Family Picture">
+                            <p class="md:pr-6  md:mt-0 leading-relaxed">
+                            More than anything, we believe in great service. We’re friendly, easy to work with, and always focused on doing the job right.
+                            If you need a team that’s reliable, detail-oriented, and truly cares, we’d love to help.                   </p>
+                        </div>
+                    <!-- End of Section 4-->
+                    </div>
+                <!-- End of Content Section-->
+                </div>
+            <!--end of About us Card-->    
+            </div>
+        <!--End of Full screen modal-->
         </div>
+        <!-- Script for Modal -->
+        <script>
+            const openBtn = document.getElementById('AboutHeader'); // Open button
+            const closeBtn = document.getElementById('closeAbout'); // Close button
+            const overlay = document.getElementById('aboutOverlay'); // Modal overlay
 
-        <!-- Content Sections -->
-        <div class="space-y-6 text-gray-700 text-sm md:text-base">
-            <!-- Section 1 -->
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="w-full">
-                    <img class="mr-6 float-left w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/clean-kitchen-penticton.jpg" alt="Clean Kitchen">
-                    <p class="md:pl-6  md:mt-0 leading-relaxed">
-                        With over 20 years of professional cleaning experience, we know what it takes to get a space truly clean. 
-                        Our background in restaurant operations and food safety taught us the highest standards, and we’ve carried that same level of care into everything we do.                    </p>
-                </div>
-            </div>
+            // Open modal
+            openBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                overlay.classList.remove('hidden');
+            });
 
-            <!-- Section 2 -->
-            <div class="flex flex-col md:flex-row-reverse items-center">
-                <div class="w-full">
-                    <img class="float-right ml-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/penticton-cleaning-janitorial.jpg" alt="Cleaning Janitorial">
-                    <p class="md:pr-6  md:mt-0 leading-relaxed">
-                        After years of managing busy restaurant schedules, we made the decision to step away in favor of more time with our family.
-                        Moving back to our hometown of Penticton, BC, gave us more time with grandparents and made us realize how many seniors could use a helping hand. It’s a need we’re proud to meet.
-                    </p>
-                </div>
-            </div>
+            // Close modal when clicking the button
+            closeBtn.addEventListener('click', () => {
+                overlay.classList.add('hidden');
+            });
 
-            <!-- Section 3 -->
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="w-full">
-                    <img class="float-left mr-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/cleaning-company-penticton.jpg" alt="Senior Cleaning">
-                    <p class="md:pl-6  md:mt-0 leading-relaxed">
-                        As our business grew, so did the demand for our services. We quickly became the go-to team for large-scale cleaning jobs like residential move-outs and janitorial services for apartment buildings, condos, and strata properties. 
-                        At the same time, we continue to offer routine housekeeping for seniors who need extra support, whether it’s weekly, bi-weekly, or monthly.                </p>
-                </div>
-            </div>
+            // Close modal when clicking outside of it
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.add('hidden');
+                }
+            });
 
-            <!-- Section 4 -->
-            <div class="flex flex-col md:flex-row-reverse items-center">
-                <div class="w-full">
-                    <img class="float-right ml-6 w-28 h-28 md:w-36 md:h-36 rounded-lg shadow" src="./images/move-out-cleaning-company-penticton.jpg" alt="Family Picture">
-                    <p class="md:pr-6  md:mt-0 leading-relaxed">
-    More than anything, we believe in great service. We’re friendly, easy to work with, and always focused on doing the job right.
-                                If you need a team that’s reliable, detail-oriented, and truly cares, we’d love to help.                   </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Script for Modal -->
-<script>
-    const openBtn = document.getElementById('AboutHeader'); // Open button
-    const closeBtn = document.getElementById('closeAbout'); // Close button
-    const overlay = document.getElementById('aboutOverlay'); // Modal overlay
-
-    // Open modal
-    openBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        overlay.classList.remove('hidden');
-    });
-
-    // Close modal when clicking the button
-    closeBtn.addEventListener('click', () => {
-        overlay.classList.add('hidden');
-    });
-
-    // Close modal when clicking outside of it
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-            overlay.classList.add('hidden');
-        }
-    });
-
-    // Close modal with Esc key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === "Escape") {
-            overlay.classList.add('hidden');
-        }
-    });
-</script>
+            // Close modal with Esc key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === "Escape") {
+                    overlay.classList.add('hidden');
+                }
+            });
+        </script>
 
 
        
@@ -315,85 +313,91 @@
                     <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
-            <!-- Service1 Container-->
-<!-- Service1 Container-->
-<div class="container mx-auto px-4 py-5">
-    <div class="p-14 flex justify-center">
-        <h2 class="text-2xl font-bold">Services</h2>
-    </div>
-    <div class="flex flex-col md:flex-row items-center">
-        <!-- Service1 image container-->
-        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
-            <img
-                alt="Janitorial for common areas and amenities in apartments, condos, and strata properties in Penticton"
-                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"
-                src="./images/Strata_Building.jpg"
-            />
-        </div>
-        <!--Service1 heading and description container-->
-        <div class="w-full md:w-5/12 px-4">
-            <div class="md:pr-12">
-                <h3 class="font-semibold text-lg sm:text-xl md:text-2xl">Strata Building Cleaning</h3>
-                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
-                    We specialize in providing reliable, 
-                    high-quality cleaning & janitorial services for apartments, condos, 
-                    and strata buildings in Penticton.
-                    Our team will maintain common areas, hallways, and amenities.
-                </p>                        
-            </div>
-        </div>
-    </div>
-</div>
+            <!-- Services Container-->
+            <div class="container mx-auto px-4 py-5">
+                <!-- Services Heading-->
+                <div class="p-14 flex justify-center">
+                    <h2 class="text-2xl font-bold underline">Services</h2>
+                </div>        
 
-<!--Service2 Container-->
-<div class="container mx-auto px-4 py-5">
-    <div class="flex flex-col md:flex-row items-center">
-        <!-- Service2 image container-->
-        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
-            <img
-                alt="move out cleaning services Penticton"
-                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"               
-                src="./images/Move-out-clean-Penticton.jpg"
-            />
-        </div>
-        <!--Service2 heading and description container-->
-        <div class="w-full md:w-5/12 px-4">
-            <div class="md:pr-12">
-                <h3 class="font-semibold text-lg sm:text-xl md:text-2xl">Move-Out Clean</h3>
-                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
-                    Thorough move-out cleaning services for a smooth and stress-free transition.
-                </p>                        
-            </div>
-        </div>
-    </div>
-</div>
+                <!-- Service1 Container-->
+                <div class="container mx-auto px-4 py-5">
+                    <div class="flex flex-col sm:flex-row items-center">
+                        <!-- Service1 image container-->
+                        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
+                            <h3 class="font-semibold text-center pb-2 text-lg sm:text-xl sm:hidden md:text-2xl">Strata Building Cleaning</h3>
+                            <img
+                                alt="Janitorial for common areas and amenities in apartments, condos, and strata properties in Penticton"
+                                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"               
+                                src="./images/Strata_Building.jpg"
+                            />
+                        </div>
+                        <!--Service1 heading and description container-->
+                        <div class="w-full md:w-3/4 px-4">
+                            <div class="md:pr-12">
+                                <h3 class="hidden sm:inline-block font-semibold text-lg sm:text-xl md:text-2xl">Strata Building Cleaning</h3>
+                                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
+                                    We specialize in providing reliable, 
+                                    high-quality cleaning & janitorial services for apartments, condos, 
+                                    and strata buildings in Penticton.
+                                    Our team will maintain common areas, hallways, and amenities.
+                                </p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<!--Service3 Container-->
-<div class="container mx-auto px-4 py-5">
-    <div class="flex flex-col md:flex-row items-center">
-        <!-- Service3 image container-->
-        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
-            <img
-                alt="residential house cleaning services Penticton"
-                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"
-                src="./images/House Clean Bathroom Penticton.jpg"
-            />
-        </div>
-        <!-- Service3 heading and description container -->
-        <div class="w-full md:w-5/12 px-4">
-            <div class="md:pr-12">
-                <h3 class="font-semibold text-lg sm:text-xl md:text-2xl">Residential Cleaning</h3>
-                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
-                    Recurring cleaning services tailored to the needs of 
-                    seniors and busy households in Penticton.
-                </p>    
-                <p class="pt-3 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">
-                    We will help keep your home consistently spotless. 
-                </p>                        
-            </div>
-        </div>
-    </div>
-</div>
+                <!--Service2 Container-->
+                <div class="container mx-auto px-4 py-5">
+                    <div class="flex flex-col sm:flex-row items-center">
+                        <!-- Service2 image container-->
+                        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
+                            <h3 class="font-semibold text-center pb-2 text-lg sm:text-xl sm:hidden md:text-2xl">Move-Out Clean</h3>
+                            <img
+                                alt="move out cleaning services Penticton"
+                                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"               
+                                src="./images/Move-out-clean-Penticton.jpg"
+                            />
+                        </div>
+                        <!--Service2 heading and description container-->
+                        <div class="w-full md:w-3/4 px-4">
+                            <div class="md:pr-12">
+                                <h3 class="hidden sm:inline-block font-semibold text-lg sm:text-xl md:text-2xl">Move-Out Clean</h3>
+                                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
+                                    Thorough move-out cleaning services for a smooth and stress-free transition.
+                                </p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Service3 Container-->
+                <div class="container mx-auto px-4 py-5">
+                    <div class="flex flex-col sm:flex-row items-center">
+                        <!-- Service3 image container-->
+                        <div class="w-full md:w-4/12 lg:w-3/12 px-4 mb-4 md:mb-0">
+                            <h3 class="font-semibold text-center pb-2 text-lg sm:text-xl sm:hidden md:text-2xl">Residential Cleaning</h3>
+                            <img
+                                alt="residential house cleaning services Penticton"
+                                class="w-full max-w-[300px] sm:max-w-[250px] md:max-w-full rounded-lg shadow-lg object-cover aspect-[4/3]"
+                                src="./images/House Clean Bathroom Penticton.jpg"
+                            />
+                        </div>
+                        <!-- Service3 heading and description container -->
+                        <div class="w-full md:w-3/4 px-4">
+                            <div class="md:pr-12">
+                                <h3 class="hidden sm:inline-block font-semibold text-lg sm:text-xl md:text-2xl">Residential Cleaning</h3>
+                                <p class="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-gray-600">
+                                    Recurring cleaning services tailored to the needs of 
+                                    seniors and busy households in Penticton.
+                                </p>    
+                                <p class="pt-3 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">
+                                    We will help keep your home consistently spotless. 
+                                </p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         <!-- End of Services section-->    
         </section>
