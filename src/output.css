@@ -878,6 +878,10 @@ video {
   min-width: 75px;
 }
 
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1555,6 +1559,10 @@ video {
     max-width: 250px;
   }
 
+  .sm\:max-w-none {
+    max-width: none;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1705,6 +1713,10 @@ video {
 
   .md\:max-w-\[90px\] {
     max-width: 90px;
+  }
+
+  .md\:max-w-none {
+    max-width: none;
   }
 
   .md\:flex-row {
