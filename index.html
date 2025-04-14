@@ -19,6 +19,11 @@
             --mainColor: #59ACFF;
             --accentColor: #4f92ad;
             <link rel="stylesheet" href="./styles.css">
+                        
+            
+
+
+
         -->
         <link href="./src/output.css" rel="stylesheet">
         <!--icons-->
@@ -40,7 +45,7 @@
 
     <body class="font-sans text-gray-800 m-0 p-0 box-border ">
     <!--fixed Header with bg-gradiant navigation and contact links mobile responsive.-->
-        <header class="fixed w-full p-4 bg-[linear-gradient(to_right,_#fff_200px,_#59acff)] text-black text-sm sm:text-base z-50">
+        <header class="fixed top-0 overflow-hidden w-full p-4 bg-[linear-gradient(to_right,_#fff_200px,_#59acff)] text-black text-sm sm:text-base z-50">
             <!--header container centered on mobile. email added on md screens -->
             <div  class=" w-full flex items-center justify-center md:justify-between">
                 <!-- phone contact for left side on md screens -->
@@ -76,7 +81,7 @@
             </div>    
             <!-- floating Contact us Button right side. loads on hero section, removes at Contact us section. -->
             <div id="fixed-cta-button" class="bg-[#4f92ad] text-[#d3e7ec] fixed
-                top-16 md:top-[82px] right-5 py-2.5 pl-3 pr-5 rounded-full font-bold md:text-lg z-[1000] transition-all 
+                top-16 md:top-[82px] right-5 py-2.5 pl-3 pr-5 rounded-full font-bold md:text-lg z-40 transition-all 
                 duration-300 ease-in-out transform scale-100 hover:scale-110
                 hover:shadow-lg hover:bg-[#3cb7b5] hover:text-white hidden ">
                 <!--Nav link to contact section with Logo and CTA-->
@@ -266,12 +271,12 @@
                             Our team provides top-tier cleaning services with a focus on quality and trust.
                           </p>
                           <p class="mt-4 text-lg text-gray-600">
-                            From residential homes to multi-unit strata buildings, our team delivers expert cleaning services that exceed expectations. We focus on detail and reliability, ensuring your property stays pristine year-round. We make it simple, easy, and reliable — every time.
+                            From residential homes to multi-unit strata buildings, our team delivers expert cleaning services that exceed expectations. We focus on detail and reliability, ensuring your property stays pristine year-round. We make it simple, easy, and reliable every time.
                           </p>
                           <a href="#contact" class="mt-6 inline-block bg-blue-400 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
                             Get Started with a Free Quote
                           </a>
-                          <p class="mt-2 text-sm text-gray-500">Call, text, or email today — we’ll take care of the rest.</p>
+                          <p class="mt-2 text-sm text-gray-500">Call, text, or email today! We’ll take care of the rest.</p>
                         </div>
                       </div>
                       
@@ -556,10 +561,12 @@
         <!-- Contact Section -->
 <section id="contact" class="py-12 bg-white">
     <div class="max-w-2xl mx-auto px-6">
-        <div class="text-center mb-6">
+        <div class="text-center mb-6 flex gap-2 justify-center">
+            <img src="./images/Lakecity-Cleaners-Penticton-Icon.png" class="w-7" alt="">
             <h2 class="text-2xl font-bold">Contact Us</h2>
         </div>
-                <div class="flex flex-col items-center gap-4 text-center">
+        <div class="flex flex-col items-center gap-4 text-center">
+            <!-- 
             <div class="flex flex-row items-center gap-3">
                 <img src="./images/Lakecity-Cleaners-Penticton-Icon.png" class="w-6" alt="">
                 <p>Lakecity Cleaners</p>
@@ -568,8 +575,9 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Penticton, BC</p>
             </div>
-            <div class="flex flex-row gap-3">
-                <a style="text-decoration:none ;" class="hover:text-gray-600 flex items-center gap-2" href="tel:+2504622280">
+            -->
+            <div class="flex flex-col sm:flex-row sm:gap-8">
+                <a style="text-decoration:none ;" class="hover:text-gray-600 flex justify-center items-center gap-2" href="tel:+2504622280">
                     <i class="fa-solid fa-phone"></i>
                     <i class="fa-solid fa-comment-sms"></i>
                     250-462-2280
